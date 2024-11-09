@@ -1,23 +1,24 @@
 @extends('layouts.app')
 
-@section('title', 'Add Task')
+@section('title', 'Edit Task')
 
 @section('styles')
     <style>
-        .error-message{
+        .error-message {
             color: red;
-            font-size: 0.8rem;
+            font-size: 0%.8rem;
         }
     </style>
 @endsection
 
 @section('content')
     {{-- {{$errors}} --}}
-    <form method="post" action="{{ route('tasks.store') }}">
+    <form method="post" action="{{ route('tasks.update', ['id' => $task->id]) }}">
         @csrf
+        @method('PUT')
         <div>
             <label for="title">Title</label>
-            <input type="text" name="title" id="title">
+            <input type="text" name="title" id="title" value="{{ $task->title }}">
             @error('title')
                 <p class='error-message'>{{ $message }}</p>
             @enderror
@@ -25,15 +26,14 @@
 
         <div>
             <label for="description">Decription</label>
-            <textarea name="description" id="description" rows="5"></textarea>
+            <textarea name="description" id="description" rows="5">{{ $task->description }}</textarea>
             @error('description')
                 <p class='error-message'>{{ $message }}</p>
             @enderror
         </div>
-
         <div>
             <label for="long_description">Long Decription</label>
-            <textarea name="long_description" id="long_description" rows="10"></textarea>
+            <textarea name="long_description" id="long_description" rows="10">{{ $task->long_description }}</textarea>
             @error('long_description')
                 <p class='error-message'>{{ $message }}</p>
             @enderror
