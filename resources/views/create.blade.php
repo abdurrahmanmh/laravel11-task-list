@@ -3,6 +3,7 @@
 @section('title', 'Add Task')
 
 @section('content')
+{{$errors}}
     <form method="post" action="{{ route('tasks.store') }}">
         @csrf
         <div>
