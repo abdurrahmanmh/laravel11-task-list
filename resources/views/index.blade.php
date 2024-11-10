@@ -4,6 +4,10 @@
 @section('title', 'Task List')
     
 @section('content') 
+    <div>
+        <a href="{{route('tasks.create')}}">Create Task</a>
+    </div>
+
     @forelse ($tasks as $task)
         {{-- <div>
             <h3>There are tasks</h3>
