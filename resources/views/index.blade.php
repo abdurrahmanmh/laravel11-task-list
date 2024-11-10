@@ -19,4 +19,11 @@
         </div>
         {{-- @endif --}}
     @endforelse
+
+    @if ($task->count())
+        <nav>{{$tasks->links()}}   </nav>     
+    @else
+        
+    @endif    
+
 @endsection
