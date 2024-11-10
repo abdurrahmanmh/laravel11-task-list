@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Add Task')
+{{-- @section('title', 'Add Task')
 
 @section('styles')
     <style>
@@ -9,17 +9,20 @@
             font-size: 0.8rem;
         }
     </style>
-@endsection
+@endsection --}}
 
 @section('content')
-    {{-- {{$errors}} --}}
+    @include('form')
+
+
+    {{-- {{$errors}}
     <form method="post" action="{{ route('tasks.store') }}">
         @csrf
         <div>
             <label for="title">Title</label>
             <input type="text" name="title" id="title" value="{{old('title')}}">
             @error('title')
-                <p class='error-message'>{{ $message }}</p>
+                <p class='error-message'> {{ $message }}</p>
             @enderror
         </div>
 
@@ -42,5 +45,5 @@
         <div>
             <button type="submit">Submit</button>
         </div>
-    </form>
+    </form> --}}
 @endsection
