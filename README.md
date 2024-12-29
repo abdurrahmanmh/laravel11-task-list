@@ -33,11 +33,11 @@ php artisan migrate:refresh --seed
 ```
 ## Screenshot
 
-![Homepage](screenshot/Screenshot%2024-12-29%212620.png)
+![Homepage](screenshot/1.png)
 
-![Update Task](screenshot/Screenshot%2024-12-29%212639.png)
+![Update Task](screenshot/2.png)
 
-![Update Task](screenshot/Screenshot%202024-12-29%20212610.png)
+![Update Task](screenshot/2.png)
 
 
 
