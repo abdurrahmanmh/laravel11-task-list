@@ -13,7 +13,7 @@ Just learning
 
 how to run?
 have docker
-install node js, composer, php(enable zip, pdo extension)
+install node js, composer(use docker-compose.yml), php(enable zip, pdo extension)
 
 follow laravel documentation installation
 
