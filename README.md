@@ -30,7 +30,7 @@ php artisan make:request TaskRequest
 php artisan db:seed
 php artisan migrate:refresh --seed
 
-
+```
 ## Screenshot
 
 ![Homepage](screenshot/Screenshot%2024-12-29%212620.png)
