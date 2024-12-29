@@ -37,7 +37,7 @@ php artisan migrate:refresh --seed
 
 ![Update Task](screenshot/2.png)
 
-![Update Task](screenshot/2.png)
+![Update Task](screenshot/3.png)
 
 
 
