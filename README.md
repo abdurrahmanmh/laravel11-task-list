@@ -19,6 +19,18 @@ follow laravel documentation installation
 
 use docker for mysql
 
+
+## Command Line Instructions
+
+### Creating Models, Factories, and Requests
+```bash
+php artisan make:model Task
+php artisan make:factory TaskFactory --model=Task
+php artisan make:request TaskRequest
+php artisan db:seed
+php artisan migrate:refresh --seed
+
+
 ## Screenshot
 
 ![Homepage](screenshot/Screenshot%2024-12-29%212620.png)
