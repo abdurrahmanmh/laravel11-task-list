@@ -15,7 +15,7 @@
         {{-- @if (count($tasks)) --}}
         {{-- @foreach ($tasks as $task) --}}
         <div><a href="{{ route('tasks.show', ['task' => $task->id]) }}" @class(['line-through' => $task->completed])>
-                {{ $task->title }}
+            {{ ($tasks->currentPage() - 1) * $tasks->perPage() + $loop->iteration }}. {{ $task->title }}
             </a></div>
         {{-- @endforeach --}}
         {{-- @else --}}
