@@ -15,3 +15,10 @@ services:
     restart: always
     ports:
       - 8080:8080
+  mailpit:
+    image: axllent/mailpit
+    container_name: mailpit
+    restart: always
+    ports:
+      - 1025:1025   # SMTP server
+      - 8025:8025   # Web interface
